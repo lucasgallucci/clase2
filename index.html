@@ -8,7 +8,7 @@
 	<header>
 		<nav>
 			<img src="http://placehold.it/100x50">
-	
+
 			<ul>
 				<li>
 					<a href="main.html">
@@ -59,7 +59,7 @@
 					consequat.
 				</p>
 				<p>
- 					Duis aute irure dolor in reprehenderit in voluptate velit esse
+					Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
@@ -157,8 +157,102 @@
 				</article>
 			</li>
 		</ol>
-
 	</section>
-<!-- HOLA -->
+
+
+	<section>
+		<table>
+			<tr>
+				<td>Países</td>
+				<td>Bronce</td>
+				<td>Plata</td>
+				<td>Oro</td>
+			</tr>
+
+			<tr>
+				<td>Argentina</td>
+				<td>5</td>
+				<td>6</td>
+				<td>8</td>
+			</tr>
+
+			<tr>
+				<td>Brasil</td>
+				<td>10</td>
+				<td>8</td>
+				<td>20</td>
+			</tr>
+
+			<tr>
+				<td>Uruguay</td>
+				<td>9</td>
+				<td>6</td>
+				<td>10</td>
+			</tr>
+
+
+		</table>
+	</section>
+
+	<hr/>
+
+	<section>
+		<form method="POST" action="enviar.php">
+			<label for="nombre">Nombre: </label>
+			<input name="Nombre" placeholder="Ingresá tu nombre" type="text" required>
+
+			<br/>
+
+			<label for="correo">Email</label>
+			<input name="correo" placeholder="Ingresá tu correo" type="email" required>
+
+			<br/>
+
+			<label for="password">Contraseña</label>
+			<input name="password" placeholder="Ingresá contraseña" type="password" required>
+
+			<br/>
+
+			<label for="telefono">Teléfono: </label>
+			<input type="tel" name="telefono" placeholder="Ingresar teléfono">
+
+			<br/>
+
+			<label for="edad">Edad:</label>
+			<input type="number" placeholder="ingresá edad" name="edad">
+
+			<br/>
+
+			<label for="mensaje">Mensaje</label>
+			<textarea name="mensaje" placeholder="mensaje"></textarea>
+
+			<br/>
+
+			<label for="destino">Destino</label>
+			<select name="destino" required>
+				<option value="">Seleccionar Destino</option>
+				<option value="CABA">Cuidad Autónoma de Buenos Aires</option>
+				<option value="BA">Buenos Aires</option>
+				<option value="ER">Entre Ríos</option>
+				<option value="SF">Santa Fe</option>
+			</select>
+
+			<br/>
+
+			<label for="entrega">Método de entrega</label>
+			<input name="entrega" type="radio" value="Delivery"> <span>Delivery</span>
+			<input name="entrega" type="radio" value="Local"> <span>Retira por el local</span>
+
+			<br/>
+
+			<label for="cv">Curriculum</label>
+			<input type="file" name="cv">
+
+			<br/>
+
+			<input type="submit" value="Enviar Formulario">
+		</form>
+	</section>
+
 </body>
 </html>
